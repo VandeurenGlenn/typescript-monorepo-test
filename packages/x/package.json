@@ -1,0 +1,26 @@
+{
+	"name": "x",
+	"type": "module",
+	"dependencies": {
+		"internals": "^0.0.1"
+	},
+	"scripts": {
+		"build": "wireit"
+	},
+	"wireit": {
+		"build": {
+			"command": "tsc --pretty",
+			"dependencies": [
+				"../internals:build"
+			],
+			"clean": "if-file-deleted",
+			"files": [
+				"tsconfig.json",
+				"./src"
+			],
+			"output": [
+				"./out"
+			]
+		}
+	}
+}

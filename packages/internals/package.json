@@ -1,0 +1,22 @@
+{
+	"name": "internals",
+	"version": "0.0.1",
+	"type": "module",
+	"types": "./out/index.d.ts",
+	"scripts": {
+		"build": "wireit"
+	},
+	"wireit": {
+		"build": {
+			"command": "tsc --pretty",
+			"clean": "if-file-deleted",
+			"files": [
+				"tsconfig.json",
+				"./src"
+			],
+			"output": [
+				"./out"
+			]
+		}
+	}
+}
