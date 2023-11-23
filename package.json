@@ -4,18 +4,9 @@
 		"packages/*"
 	],
 	"devDependencies": {
-		"typescript": "^5.3.2",
-		"wireit": "^0.14.1"
+		"typescript": "^5.3.2"
 	},
 	"scripts": {
-		"build": "wireit"
-	},
-	"wireit": {
-		"build": {
-			"dependencies": [
-				"./packages/internals:build",
-				"./packages/x:build"
-			]
-		}
+		"build": "tsc --pretty"
 	}
 }
