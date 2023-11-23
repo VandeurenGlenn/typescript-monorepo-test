@@ -5,3 +5,5 @@ There are rules:
 
 - No use of rollup, pure TypeScript
 - IF POSSIBLE, no relative paths for the import because it sort of defeats the purpose of having a monorepo here.
+
+You can use `npm run build` from root to build everything.
